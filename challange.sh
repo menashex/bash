@@ -15,7 +15,7 @@ chmod 447 ${TARGET}/third.dat
 cd ${TARGET}
 for file in *
 do
-	md5=`md5sum ${file}`
+	md5=`echo -n {file} | md5sum | cut -d" " -f1`
 	if [ -w ${file} ]
 	then
 		echo "${md5}: WARNING: FILE IS WORLD WRITEABLE: ${file}"
