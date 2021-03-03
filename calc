@@ -3,7 +3,7 @@
 read X
 read Y
 
-if [[ $X -lt 100 ]] && [[ $X -gt -100 ]] && [[ $Y -lt 100 ]] && [[  $Y -gt -100 ]]  && [[ $Y -ne 0 ]]
+if [[ $X -le 100 ]] && [[ $X -ge -100 ]] && [[ $Y -le 100 ]] && [[  $Y -ge -100 ]]  && [[ $Y -ne 0 ]]
 then
 	echo $(expr $X '+' $Y)
 	echo $(expr $X '-' $Y)
