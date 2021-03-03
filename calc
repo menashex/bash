@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read X
+read Y
+
+if [[ $X -lt 100 ]] && [[ $X -gt -100 ]] && [[ $Y -lt 100 ]] && [[  $Y -gt -100 ]]  && [[ $Y -ne 0 ]]
+then
+	echo $(expr $X '+' $Y)
+	echo $(expr $X '-' $Y)
+	echo $(expr $X '*' $Y)
+	echo $(expr $X '/' $Y)
+fi
