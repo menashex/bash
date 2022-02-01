@@ -1,0 +1,11 @@
+  GNU nano 5.3                                2increments                                         
+#!/bin/bash
+
+
+for i in {1..50}
+do
+    echo ${i}
+done
+
+
+
